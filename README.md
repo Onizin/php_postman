@@ -1,29 +1,33 @@
 # php_postman
-Repo ini tampaknya berjudul php_postman, yang mengindikasikan bahwa isinya adalah tutorial atau contoh penggunaan PHP sederhana (simply PHP) dengan bantuan Postman.
 
-Penjelasan Umum
-PHP adalah bahasa pemrograman sisi server yang sering digunakan untuk membuat aplikasi web.
-Postman adalah aplikasi yang digunakan untuk menguji API (Application Programming Interface), seperti endpoint HTTP yang dibuat dengan PHP.
-Tutorial Umum yang Biasanya Ada di Repo Seperti Ini
-Membuat Endpoint PHP Sederhana
+Repo ini berisi contoh sederhana penggunaan PHP untuk membuat API, yang bisa kamu uji lewat Postman.
 
-Biasanya, repo ini akan berisi file PHP (misal: api.php) yang menerima request HTTP (GET, POST, dsb).
+## Sekilas Tentang PHP & Postman
 
-## Penjelasan File `helper.php`
+PHP adalah bahasa pemrograman yang sering dipakai untuk bikin aplikasi web di sisi server. Sementara Postman adalah alat yang memudahkan kita untuk mengetes API, misalnya endpoint HTTP yang dibuat pakai PHP.
 
-File `helper.php` biasanya berisi fungsi-fungsi bantu (helper functions) yang digunakan untuk memudahkan penulisan kode di file lain, seperti `data.php` atau `create.php`. Fungsi di dalam `helper.php` dapat berupa validasi data, format respon JSON, atau utilitas lain yang sering dipakai berulang. Dengan memisahkan fungsi-fungsi ini ke dalam satu file, kode menjadi lebih rapi, mudah dipelihara, dan dapat digunakan kembali di berbagai bagian aplikasi.
+## Penjelasan File
 
-## Penjelasan File `data.php`
+### `helper.php`
 
-File `data.php` digunakan sebagai bagian dari tutorial ini untuk mendemonstrasikan bagaimana data dapat disimpan, diambil, atau dimanipulasi menggunakan PHP. File ini biasanya berisi kode yang menangani data yang akan diakses melalui endpoint API, sehingga Anda dapat mencoba berbagai request menggunakan Postman.
+File ini biasanya berisi kumpulan fungsi bantu yang sering dipakai di file lain, seperti `data.php`, `create.php`, `update.php`, atau `delete.php`. Fungsinya bisa untuk validasi data, membentuk respon JSON, atau hal-hal kecil lain yang bikin kode lebih rapi dan gampang dipakai ulang.
 
-Anda dapat memodifikasi `data.php` sesuai kebutuhan untuk menyesuaikan dengan skenario pembelajaran yang diinginkan.
+### `data.php`
 
-## Penjelasan File `create.php`
+File ini dipakai buat menyimpan atau mengambil data. Biasanya isinya kode PHP yang mengatur data yang akan diakses lewat endpoint API. Kamu bisa bebas modifikasi file ini sesuai kebutuhan belajar.
 
-File `create.php` biasanya digunakan untuk menangani permintaan pembuatan data baru melalui metode HTTP POST. Dalam konteks API sederhana dengan PHP, file ini akan menerima data dari client (misalnya melalui Postman), memprosesnya, dan kemudian menambahkannya ke sumber data (seperti array, file, atau database). File ini penting untuk memahami bagaimana data baru dapat dikirim dan disimpan menggunakan API berbasis PHP.
+### `create.php`
 
-## Penjelasan File `update.php`
+File ini menangani request untuk menambah data baru, biasanya lewat metode HTTP POST. Data dari client (misal dari Postman) akan diproses dan ditambah ke sumber data (bisa array, file, atau database sederhana).
 
-File `update.php` biasanya digunakan untuk menangani permintaan pembaruan data yang sudah ada melalui metode HTTP PUT atau PATCH. Dalam API sederhana berbasis PHP, file ini akan menerima data baru dari client (misalnya melalui Postman) beserta identitas data yang ingin diubah (seperti ID). Selanjutnya, data tersebut akan diproses dan diperbarui pada sumber data (bisa berupa array, file, atau database). File ini penting untuk memahami bagaimana data yang sudah ada dapat diubah menggunakan API berbasis PHP.
+### `update.php`
 
+File ini dipakai untuk mengubah data yang sudah ada, biasanya lewat metode HTTP PUT atau PATCH. Data baru dan ID data yang mau diubah dikirim dari client, lalu diproses dan di-update di sumber data.
+
+### `delete.php`
+
+File ini untuk menghapus data, biasanya lewat metode HTTP DELETE. Client mengirim ID data yang mau dihapus, lalu file ini akan memproses dan menghapus data tersebut dari sumber data.
+
+---
+
+Intinya, repo ini cocok buat kamu yang mau belajar dasar-dasar bikin API sederhana pakai PHP dan mengetesnya dengan Postman.
