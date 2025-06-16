@@ -1,4 +1,4 @@
-# php_postman
+# PHP Simpel Postman
 
 Repo ini berisi contoh sederhana penggunaan PHP untuk membuat API, yang bisa kamu uji lewat Postman.
 
