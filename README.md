@@ -23,3 +23,7 @@ Anda dapat memodifikasi `data.php` sesuai kebutuhan untuk menyesuaikan dengan sk
 
 File `create.php` biasanya digunakan untuk menangani permintaan pembuatan data baru melalui metode HTTP POST. Dalam konteks API sederhana dengan PHP, file ini akan menerima data dari client (misalnya melalui Postman), memprosesnya, dan kemudian menambahkannya ke sumber data (seperti array, file, atau database). File ini penting untuk memahami bagaimana data baru dapat dikirim dan disimpan menggunakan API berbasis PHP.
 
+## Penjelasan File `update.php`
+
+File `update.php` biasanya digunakan untuk menangani permintaan pembaruan data yang sudah ada melalui metode HTTP PUT atau PATCH. Dalam API sederhana berbasis PHP, file ini akan menerima data baru dari client (misalnya melalui Postman) beserta identitas data yang ingin diubah (seperti ID). Selanjutnya, data tersebut akan diproses dan diperbarui pada sumber data (bisa berupa array, file, atau database). File ini penting untuk memahami bagaimana data yang sudah ada dapat diubah menggunakan API berbasis PHP.
+
